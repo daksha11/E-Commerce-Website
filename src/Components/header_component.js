@@ -23,18 +23,16 @@ const HeaderComponent = () => {
 };
 
 const StyledWrapper = styled.div`
-  /* before adding the img to the div with the 
-"card-img" class, remove css styles 
-.card-img .img::before and .card-img .img::after,
-then set the desired styles for .card-img. */
 .card {
   --font-color: #323232;
   --font-color-sub: #666;
   --bg-color: #fff;
   --main-color: #323232;
   --main-focus: #2d8cf0;
-  width: 100%;
-  padding: 0.25rem;
+  width: 99.7%;
+  height: 13vh;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   background: var(--bg-color);
   border: 2px solid var(--main-color);
   box-shadow: 4px 4px var(--main-color);

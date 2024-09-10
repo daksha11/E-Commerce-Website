@@ -5,45 +5,124 @@ const UserProfileComponent = () => {
   return (
     <StyledWrapper>
       <div className="card">
-        <div className="card-title">
-          User <br />
-          <span>Member since 2024</span>
+        <div className="profileImage">
+          <svg viewBox="0 0 128 128">
+            <circle r="60" fill="transparent" cy="64" cx="64" />
+            <circle r="48" fill="transparent" cy="64" cx="64" />
+            <path
+              fill="#191919"
+              d="m64 14a32 32 0 0 1 32 32v41a6 6 0 0 1 -6 6h-52a6 6 0 0 1 -6-6v-41a32 32 0 0 1 32-32z"
+            />
+            <path
+              opacity="1"
+              fill="#191919"
+              d="m62.73 22h2.54a23.73 23.73 0 0 1 23.73 23.73v42.82a4.45 4.45 0 0 1 -4.45 4.45h-41.1a4.45 4.45 0 0 1 -4.45-4.45v-42.82a23.73 23.73 0 0 1 23.73-23.73z"
+            />
+            <circle r="7" fill="#fbc0aa" cy="65" cx="89" />
+            <path
+              fill="#4bc190"
+              d="m64 124a59.67 59.67 0 0 0 34.69-11.06l-3.32-9.3a10 10 0 0 0 -9.37-6.64h-43.95a10 10 0 0 0 -9.42 6.64l-3.32 9.3a59.67 59.67 0 0 0 34.69 11.06z"
+            />
+            <path
+              opacity=".3"
+              fill="#356cb6"
+              d="m45 110 5.55 2.92-2.55 8.92a60.14 60.14 0 0 0 9 1.74v-27.08l-12.38 10.25a2 2 0 0 0 .38 3.25z"
+            />
+            <path
+              opacity=".3"
+              fill="#356cb6"
+              d="m71 96.5v27.09a60.14 60.14 0 0 0 9-1.74l-2.54-8.93 5.54-2.92a2 2 0 0 0 .41-3.25z"
+            />
+            <path
+              fill="#fff"
+              d="m57 123.68a58.54 58.54 0 0 0 14 0v-25.68h-14z"
+            />
+            <path
+              strokeWidth={14}
+              strokeLinejoin="round"
+              strokeLinecap="round"
+              stroke="#fbc0aa"
+              fill="none"
+              d="m64 88.75v9.75"
+            />
+            <circle r="7" fill="#fbc0aa" cy="65" cx="39" />
+            <path
+              fill="#ffd8ca"
+              d="m64 91a25 25 0 0 1 -25-25v-16.48a25 25 0 1 1 50 0v16.48a25 25 0 0 1 -25 25z"
+            />
+            <path
+              fill="#191919"
+              d="m91.49 51.12v-4.72c0-14.95-11.71-27.61-26.66-28a27.51 27.51 0 0 0 -28.32 27.42v5.33a2 2 0 0 0 2 2h6.81a8 8 0 0 0 6.5-3.33l4.94-6.88a18.45 18.45 0 0 1 1.37 1.63 22.84 22.84 0 0 0 17.87 8.58h13.45a2 2 0 0 0 2.04-2.03z"
+            />
+            <path
+              style={{
+                fill: "none",
+                strokeLinecap: "round",
+                stroke: "#fff",
+                strokeMiterlimit: "10",
+                strokeWidth: "2",
+                opacity: ".1",
+              }}
+              d="m62.76 36.94c4.24 8.74 10.71 10.21 16.09 10.21h5"
+            />
+            <path
+              style={{
+                fill: "none",
+                strokeLinecap: "round",
+                stroke: "#fff",
+                strokeMiterlimit: "10",
+                strokeWidth: "2",
+                opacity: ".1",
+              }}
+              d="m71 35c2.52 5.22 6.39 6.09 9.6 6.09h3"
+            />
+            <circle r="3" fill="#515570" cy="62.28" cx="76" />
+            <circle r="3" fill="#515570" cy="62.28" cx="52" />
+            <ellipse
+              ry="2.98"
+              rx="4.58"
+              opacity=".1"
+              fill="#f85565"
+              cy="69.67"
+              cx="50.42"
+            />
+            <ellipse
+              ry="2.98"
+              rx="4.58"
+              opacity=".1"
+              fill="#f85565"
+              cy="69.67"
+              cx="77.58"
+            />
+            <g strokeLinejoin="round" strokeLinecap="round" fill="none">
+              <path strokeWidth={4} stroke="#fbc0aa" d="m64 67v4" />
+              <path
+                strokeWidth={2}
+                stroke="#515570"
+                opacity=".2"
+                d="m55 56h-9.25"
+              />
+              <path
+                strokeWidth={2}
+                stroke="#515570"
+                opacity=".2"
+                d="m82 56h-9.25"
+              />
+            </g>
+            <path
+              opacity=".4"
+              fill="#f85565"
+              d="m64 84c5 0 7-3 7-3h-14s2 3 7 3z"
+            />
+            <path
+              fill="#f85565"
+              d="m65.07 78.93-.55.55a.73.73 0 0 1 -1 0l-.55-.55c-1.14-1.14-2.93-.93-4.27.47l-1.7 1.6h14l-1.66-1.6c-1.34-1.4-3.13-1.61-4.27-.47z"
+            />
+          </svg>
         </div>
-        <div className="card-socials">
-          <button className="card-socials-btn facebook">
-            <svg
-              className="icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              viewBox="0 0 24 24"
-              id="Layer_21"
-              height="24"
-              data-name="Layer 21"
-            >
-              <title />
-              <path d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z" />
-            </svg>
-          </button>
-          <button className="card-socials-btn github">
-            <svg
-              viewBox="0 0 24 24"
-              height="33"
-              width="33"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-            </svg>
-          </button>
-          <button className="card-socials-btn linkedin">
-            <svg
-              height="512"
-              viewBox="0 0 512 512"
-              width="512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="m51.326 185.85h90.011v270.872h-90.011zm45.608-130.572c-30.807 0-50.934 20.225-50.934 46.771 0 26 19.538 46.813 49.756 46.813h.574c31.396 0 50.948-20.814 50.948-46.813-.589-26.546-19.551-46.771-50.344-46.771zm265.405 124.209c-47.779 0-69.184 26.28-81.125 44.71v-38.347h-90.038c1.192 25.411 0 270.872 0 270.872h90.038v-151.274c0-8.102.589-16.174 2.958-21.978 6.519-16.174 21.333-32.923 46.182-32.923 32.602 0 45.622 24.851 45.622 61.248v144.926h90.024v-155.323c0-83.199-44.402-121.911-103.661-121.911z" />
-            </svg>
-          </button>
+        <div className="textContainer">
+          <p className="name">Pepper Potts</p>
+          <p className="profile">Profile</p>
         </div>
       </div>
     </StyledWrapper>
@@ -51,78 +130,54 @@ const UserProfileComponent = () => {
 };
 
 const StyledWrapper = styled.div`
-  /* From Uiverse.io by andrew-demchenk0 */ 
-/* before adding the photo to the div with the "card-photo" class, in the css clear the styles for .card-photo and remove .card-photo::before and .card-photo::after, then set the desired styles for .card- photo. */
-
-.card {
-  --font-color: #323232;
-  --font-color-sub: #666;
-  --bg-color: #fff;
-  --main-color: #323232;
-  width: 10%;
-  height: 11rem;
-  min-width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  background: var(--bg-color);
-  border: 0.2rem solid var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
-  border-radius: 2rem;
+  .card {
+  width: 11rem;
+  height: 20rem;
+  background: rgb(39, 39, 39);
+  border-radius: 12px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
   display: flex;
+  margin: 0.3rem;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  transition-duration: .5s;
 }
 
-.card-title {
-  text-align: center;
-  color: var(--font-color);
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.card-title span {
-  font-size: 15px;
-  color: var(--font-color-sub);
-}
-
-.card-socials {
-  display: flex;
-  height: 0;
-  opacity: 0;
+.profileImage {
+  background: linear-gradient(to right,rgb(54, 54, 54),rgb(32, 32, 32));
   margin-top: 20px;
-  gap: 2rem;
-  transition: 0.5s;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.329);
 }
 
-.card-socials-btn {
-  width: 2rem;
-  height: 2rem;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.card-socials-btn svg {
+.textContainer {
   width: 100%;
-  height: 100%;
-  fill: var(--main-color);
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.card:hover > .card-socials {
-  opacity: 1;
-  height: 35px;
+.name {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
 }
 
-.card-socials-btn:hover {
-  transform: translateY(-5px);
-  transition: all 0.15s;
+.profile {
+  font-size: 0.84em;
+  color: rgb(194, 194, 194);
+  letter-spacing: 0.2px;
 }
 
-.card-photo:hover {
-  transition: 0.3s;
-  transform: scale(0.4) translate(160px, 150px);
+.card:hover {
+  background-color: rgb(43, 43, 43);
+  transition-duration: .5s;
 }
 `;
 
