@@ -1,26 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../Images/ComicStan Logo.png";
-import OptionsComponent from "./options_component.js";
-import SearchComponent from "./search_component.js";
 
-const HeaderComponent = () => {
-  return (
-    <StyledWrapper>
-      <div className="card">
-        <div style={{paddingLeft: "0.5rem", marginBottom: "0.1rem"}}>
-            <SearchComponent />
-        </div>
-        <div style={{paddingLeft: "4rem"}}>
-            <img src={logo} alt="ComicStan Logo" style={{width: "18rem"}}/>
-        </div>
-        <div style={{paddingRight: "0.5rem", marginBottom: "0.1rem"}}>
-            <OptionsComponent />
-        </div>
-      </div>
-    </StyledWrapper>
-  );
-};
+const SidebarComponent = () => {
+    return (
+        <StyledWrapper>
+            <div className="card">
+                {/* <UserProfileComponent /> */}
+            </div>
+        </StyledWrapper>
+    );
+}
 
 const StyledWrapper = styled.div`
   /* before adding the img to the div with the 
@@ -28,12 +17,14 @@ const StyledWrapper = styled.div`
 .card-img .img::before and .card-img .img::after,
 then set the desired styles for .card-img. */
 .card {
+  position:fixed;
   --font-color: #323232;
   --font-color-sub: #666;
   --bg-color: #fff;
   --main-color: #323232;
   --main-focus: #2d8cf0;
-  width: 100%;
+  width: 15%;
+  height: 100vh;
   padding: 0.25rem;
   background: var(--bg-color);
   border: 2px solid var(--main-color);
@@ -43,8 +34,9 @@ then set the desired styles for .card-img. */
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
+  overflow-y: auto;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 `;
 
-export default HeaderComponent;
+export default SidebarComponent;
