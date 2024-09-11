@@ -121,8 +121,8 @@ const UserProfileComponent = () => {
           </svg>
         </div>
         <div className="textContainer">
-          <p className="name">Pepper Potts</p>
-          <p className="profile">Profile</p>
+          <p className="name">User</p>
+          <p className="profile">Member since 2024</p>
         </div>
       </div>
     </StyledWrapper>
@@ -133,51 +133,66 @@ const StyledWrapper = styled.div`
   .card {
   width: 11rem;
   height: 20rem;
-  background: rgb(39, 39, 39);
+  background: white;
   border-radius: 12px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.123);
+  box-shadow: 2px 2px 4px 4px black;
   display: flex;
-  margin: 0.3rem;
+  margin: 0.6rem;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  transition-duration: .5s;
+  transition-duration: .25s;
 }
 
 .profileImage {
   background: linear-gradient(to right,rgb(54, 54, 54),rgb(32, 32, 32));
-  margin-top: 20px;
-  width: 170px;
-  height: 170px;
+  margin-top: 1rem;
+  width: 9rem;
+  height: 9rem;
   border-radius: 50%;
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.329);
+  box-shadow: 2px 2px 4px 4px black;
+  transition: transform 1s ease, box-shadow 1s ease;
 }
 
 .textContainer {
   width: 100%;
-  text-align: left;
-  padding: 20px;
+  text-align: center;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0rem;
 }
 
 .name {
-  font-size: 0.9em;
+  font-size: 1.5em;
   font-weight: 600;
-  color: white;
-  letter-spacing: 0.5px;
+  color: Black;
+  letter-spacing: 0.05rem;
 }
 
 .profile {
-  font-size: 0.84em;
-  color: rgb(194, 194, 194);
-  letter-spacing: 0.2px;
+  font-size: 0.9em;
+  color: black;
+  letter-spacing: 0.1rem;
 }
 
 .card:hover {
   background-color: rgb(43, 43, 43);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
+
+  .name {
+    color: white;
+  }
+
+  .profile {
+    color: white;
+  }
+
+  .profileImage {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px 6px black;
+    background: #e6e6fa;
+  }
 }
 `;
 
